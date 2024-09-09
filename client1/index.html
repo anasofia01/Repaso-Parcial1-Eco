@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cliente 1</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="form-container containers" id="div-new-user">
+			<h1>Sign Up</h1>
+			<form id="form-new-user">
+				<div class="input-group">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required />
+				</div>
+				<div class="input-group">
+					<label for="last-name">Last Name:</label>
+					<input type="text" id="last-name" name="last-name" required />
+				</div>
+				<div class="input-group">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required />
+				</div>
+				<button type="submit">Save Info</button>
+			</form>
+		</div>
+
+		<div class="containers" id="div-info-character">
+			<h1>Characters:</h1>
+			<form id="form-new-character">
+				<div class="input-group">
+					<label for="nameCharacter">Name:</label>
+					<input type="text" id="nameCharacter" name="nameCharacter" required />
+				</div>
+				<div class="input-group">
+					<label for="nivelCharacter">Nivel:</label>
+					<input type="text" id="nivelCharacter" name="nivelCharacter" required />
+				</div>
+				<div class="input-group">
+					<label for="typeCharacter">Type:</label>
+					<input type="text" id="typeCharacter" name="typeCharacter" required />
+				</div>
+				<button type="submit">Save Character</button>
+			</form>
+		</div>
+
+		<div class="containers" id="div-arms-character">
+			<h1>Arms:</h1>
+			<form id="form-new-arm">
+				<div class="input-group">
+					<label for="nameArm">Name:</label>
+					<input type="text" id="nameArm" name="nameArm" required />
+				</div>
+				<div class="input-group">
+					<label for="typeArm">Type:</label>
+					<input type="text" id="typeArm" name="typeArm" required />
+				</div>
+				<div class="input-group">
+					<label for="modalidadArm">Modalidad:</label>
+					<input type="text" id="modalidadArm" name="modalidadArm" required />
+				</div>
+				<button type="submit">Save Arm</button>
+			</form>
+		</div>
+
+		<div class="containers" id="info">
+			<h1>Opciones:</h1>
+			<button type="button" id="create-arm">Crear otra arma</button>
+			<br />
+			<button type="button" id="show-users">Ver todos los usuarios</button>
+			<br />
+			<button type="button" id="show-characters">Ver todos los personajes</button>
+			<br />
+			<button type="button" id="show-arms">Ver todas las armas</button>
+			<br />
+		</div>
+
+		<div id="list">
+			<ul></ul>
+		</div>
+
+		<script
+			src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+			integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+	</body>
+</html>

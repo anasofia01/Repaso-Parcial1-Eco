@@ -1,0 +1,5 @@
+{
+	"watch": ["server/index.js"],
+	"ignore": ["client1", "client2"],
+	"exec": "node server/index.js"
+}
